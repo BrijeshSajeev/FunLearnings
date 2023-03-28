@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.container{
+    /* background-color: aqua; */
+    margin-inline: auto;
+    width: 50rem;
+    height:40rem;
+    margin-top: 4rem;
+}
+.inside{
+    /* border: 0.2px solid #333; */
+    border-radius: 12px;
+    box-shadow: 1px 3px 20px 1px #3bb19b;
+    margin-inline: auto;
+    background-color:#fff;
+    width: 90%;
+    height: 90%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 3rem; */
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 2rem;
+}
+
+/* Left box */
+.content--box{
+    /* border-radius: 12px; */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    text-align: center;
+    padding:0 3% ;
+    /* margin-top:10rem ; */
+    background-color: #3bb19b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-size: 1.6rem;
+    color: #e6e6e6;
+}
+.text{
+    font-size: 0.6rem;
+    padding:0 1.6rem;
+    line-height: 1.5;
+
+    color: #f2eff5;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.btn:link,
+.btn:visited{
+    border: 1px solid ;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #3bb19b;
+    padding: 0.6rem 2.8rem;
+    border-radius:18px ;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    color:  #3bb19b;
+    background-color: #e6e6e6;
+}
+
+
+/* Right side */
+.form--box{
+ text-align: center;
+
+}
+h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: #3bb19b;
+}
+
+.account--box{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.logos{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #efeaea;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-weight: 700;
+}
+
+.account-text
+{
+    margin:0.6rem 0 0.6rem 0 ;
+    font-size: 0.6rem;
+    color: #c3c3c3;
+    font-weight: 500;
+}
+.form-ele{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+input{
+    border: 0;
+    background-color: #f4f8f7;
+    padding: 0.6rem 0rem 0.6rem 0.6rem;
+    width: 20rem;
+    border-radius: 6px;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #998d8d;
+}
+
+
+
+
+.sign{
+    margin-top: 3rem;
+
+}
+.sign a:link,
+.sign a:visited{
+    border: none;
+}
+.sign a:hover{
+    background-color: #fff;
+    border: 1px solid #998d8d;
+    color: #3bb19b;
+
+}
+
+
+.hidden{
+    display: none;
+}
+
+/* Sign up */
+.sign_up{
+    background-color: #32425b;
+    border-radius: 6px;
+    width: 25rem;
+    height: 43rem;
+    
+}
+.outside-box{
+    
+    padding-top: 3rem;
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.text-up h1{
+    color: #d3e0f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+.disc{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #387e85;
+    margin-bottom: 2rem;
+}
+.form-log{
+    display: flex;
+    flex-direction: column;
+    gap:1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+.in label{
+    align-self: flex-start;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #b5c6d8;
+}
+.in input{
+    border-radius: 0;
+    height: 2.5rem;
+    border: 1px solid #41516a;
+    background-color: #32425b;
+
+}
+.check-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0 2.5rem;
+    margin-bottom: 3rem;
+}
+.check-box input{
+    width: 1rem;
+    opacity: 0.2;
+}
+.check-box p{
+    color: #d3e0f1;
+
+}
+.create-acc:link,
+.create-acc:visited{
+    /* background-color: #333;
+     */
+     letter-spacing: 2px;
+     border: none;
+     border-radius: 0;
+     padding:1rem 5rem;
+}
