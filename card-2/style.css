@@ -1,4 +1,14 @@
 /*Card */
+.card-container{
+    background-color:   #e8e8e8;
+    margin-inline: auto;
+    max-width: 620px;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     width: 190px;
     height: 254px;
@@ -44,9 +54,9 @@
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-around;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0;
     -webkit-transform: translateY(-200%);
         -ms-transform: translateY(-200%);
             transform: translateY(-200%);
